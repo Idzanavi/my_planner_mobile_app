@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/labelWin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Planner Item"
+            android:textAlignment="center"
+            android:textColor="#283593"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_weight="0"
+                android:text="Title"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/labelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Text"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/textText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="0"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="0"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="0"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="0"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
